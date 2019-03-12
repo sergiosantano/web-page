@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Theme Made By www.w3schools.com - No Copyright -->
+  <title>Bootstrap Theme Simply Me</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="css/fawesome/css/font-awesome.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <style>
+  body {
+      font: 20px Montserrat, sans-serif;
+      line-height: 1.8;
+      color: #f5f6f7;
+  }
+  p {font-size: 16px;}
+  .margin {margin-bottom: 45px;}
+  .bg-1 { 
+      background-color: #1abc9c; /* Green */
+      color: #ffffff;
+  }
+  .bg-2 { 
+      background-color: #474e5d; /* Dark Blue */
+      color: #ffffff;
+  }
+  .bg-3 { 
+      background-color: #ffffff; /* White */
+      color: #555555;
+  }
+  .bg-4 { 
+      background-color: #00A887; 
+      color: #004a3b;
+  }
+  
+  .bg-4 a { 
+      color: #004a3b;
+  }
+  
+  .bg-4 a:hover {
+	color: #65D7C1;
+  }
+  
+  .container-fluid {
+      padding-top: 70px;
+      padding-bottom: 70px;
+  }
+  .navbar {
+      padding-top: 15px;
+      padding-bottom: 15px;
+      border: 0;
+      border-radius: 0;
+      margin-bottom: 0;
+      font-size: 12px;
+      letter-spacing: 5px;
+	  background-color:#1abc9c;
+  }
+  
+  .navbar-default .navbar-brand {
+	font-size: 24px; 
+	font-weight: bolder;
+  }
+  
+  .navbar-nav  li a:hover {
+      color: #fff !important;
+  }
+  
+  .navbar-nav  li  a {
+	color: #92EAD8 !important;
+	font-weight: bold;
+  }
+  
+  #infocontacto {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+  }
+  
+  #infocontacto li{
+	font-size: 0.65em;
+	text-align: left;
+	margin-bottom: 1.5em;
+  }
+  
+  #formcontacto ul{
+	width: 70%;
+	list-style-type: none;
+	margin-left:5em;
+	margin-right:5em;
+	padding: 0px;
+  }
+  
+  #formcontacto ul li {
+	text-align: left;
+	width:100%;
+	margin-bottom: 1.5em;
+  }
+  
+  #asuntonav, #mensajenav{
+	text-align: left;
+	width:100%;
+  }
+  #asuntonav input, #mensajenav textarea {
+	width:100%;
+	background: rgba(0,0,0,0.3)
+  }
+  
+  #nomemail {
+	width:100%;
+	margin:0;
+	padding:0;
+  }
+  #nomemail input{
+    display: inline;
+	width:49%;
+	background: rgba(0,0,0,0.3)
+  }
+  
+  #formcontacto ul li.boton {
+	text-align: center;
+  }
+  
+  #enviar {
+	background-color: rgba(0,0,0,0.3);
+  }
+  
+  input:focus, textarea:focus {
+	border: 0.1em solid #1DDADA;
+  }
+ 
+  </style>
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Sergio Santano</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">WHO</a></li>
+        <li><a href="#what">WHAT</a></li>
+        <li><a href="#where">WHERE</a></li>
+		<li><a href="#contact">CONTACT</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- First Container -->
+<div class="container-fluid bg-1 text-center">
+  <h3 class="margin">Who Am I?</h3>
+  <img src="img/fpers.jpg" class="img-responsive img-circle margin" style="display:inline" alt="Me" width="200" height="200">
+  <h3>I'm a Software Engineer of 21 years old graduated by the University of Oviedo (Spain)</h3>
+</div>
+
+<!-- Second Container -->
+<div class="container-fluid bg-2 text-center" id="what">
+  <h3 class="margin">What Am I?</h3>
+  <p>My name is Sergio Santano and I have studied Software Engineering in the University of Oviedo (Spain). I have worked for some important companies in the sector and I can offer my experience and  passion for the work to your company </p>
+  <a href="#" class="btn btn-default btn-lg">
+    <span class="glyphicon glyphicon-search"></span> See my CV
+  </a>
+</div>
+
+<!-- Third Container (Grid) -->
+<div class="container-fluid bg-3 text-center" id="where">    
+  <h3 class="margin">Where To Find Me?</h3><br>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>You can follow me on the social network to be daily connected and see all the news.</p>
+      <img src="img/social.png" class="img-responsive margin" style="width:100%" alt="Social Network">
+    </div>
+    <div class="col-sm-4"> 
+      <p>You can visit me on my office in the University of Oviedo; Computer science department.</p>
+        <div id="googleMap" style="height:250px;width:100%;"></div>
+		<script>
+		function myMap() {
+		var myCenter = new google.maps.LatLng(43.3580733, -5.8546294);
+		var mapProp = {center:myCenter, zoom:15, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+		var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+		var marker = new google.maps.Marker({position:myCenter});
+		marker.setMap(map);
+		}
+		</script>
+		<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBS7vKsZAQf2m898vzMaUBquiQaB88Lpmg&callback=myMap"></script>
+    </div>
+    <div class="col-sm-4"> 
+      <p>You can contact with me by filling the following form:</p>
+      <img src="img/form.jpg" class="img-responsive margin" style="width:100%" alt="Form">
+    </div>
+  </div>
+</div>
+
+<div class="container-fluid bg-2 text-center" id="contact">
+  <h3 class="margin">Contact me</h3>
+  <div class="row">
+	<!-- Esta columna para el formulario -->
+	<div class="col-sm-8">
+		<form id="formcontacto" action="" method="post">
+		
+		<ul>
+			<li>
+				<nav id="nomemail">
+					<input type="text" name="nombre" id="nombre" autocomplete="on" placeholder="Nombre y apellidos" required />
+					<input type="email" name="email" id="email" autocomplete="on" placeholder="Email address" required />
+				</nav>
+			</li>
+			
+			<li>
+				<nav id="asuntonav">
+					<input type="text" name="asunto" id="asunto" placeholder="Subject" required />
+				</nav>
+			</li>
+			
+			<li>
+				<nav id="mensajenav">
+					<textarea name="mensaje" id="mensaje" placeholder="Write here your message"></textarea>
+				</nav>
+			</li>
+			
+			<li class="boton">
+				<input type="submit" id="enviar" value="Send Now"/>
+			</li>
+			
+		</ul>
+		</form>
+	</div>
+	
+	<!-- Esta columna para el texto -->
+	<div class="col-sm-4">
+		<ul id="infocontacto">
+			<li><i class="fa fa-map-marker" aria-hidden="true"></i> Address: Universidad de Oviedo; Departamento de Informática; Federico García Lorca s/n; 33007 Oviedo; Spain.</li>
+			<li><i class="fa fa-phone" aria-hidden="true"></i> Phone: +34 663 34 83 79</li>
+			<li><i class="fa fa-envelope-o" aria-hidden="true"></i> Email: santanoalvarez.sergio@gmail.com</li>
+			<li><i class="fa fa-globe" aria-hidden="true"></i> Website: <a href="https://sergio-santano.000webhostapp.com/">www.sergio-santano.es</a></li>
+		</ul>
+	</div>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer class="container-fluid bg-4 text-center">
+  <p>&copy; 2017 <a href="https://sergio-santano.000webhostapp.com/">sergio-santano.000webhostapp.com</a></p> 
+</footer>
+
+</body>
+</html>
